@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="cldv6212task2ModelStoreContainer" CdmEntityContainer="cldv6212task2Entities">
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="cldv6212task2Model.product">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="item_descr_and_name" ColumnName="item_descr_and_name" />
+          <ScalarProperty Name="item_price" ColumnName="item_price" />
+          <ScalarProperty Name="item_image" ColumnName="item_image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
