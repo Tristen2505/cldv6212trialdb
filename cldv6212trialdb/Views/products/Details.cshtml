@@ -1,0 +1,43 @@
+﻿@model cldv6212trialdb.product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.item_descr_and_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.item_descr_and_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.item_price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.item_price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.item_image)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.item_image)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
